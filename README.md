@@ -1,33 +1,41 @@
-# hero-manager-web
+# HeroManager Web (Vue 3 + Vite + Tailwind)
 
-This template should help get you started developing with Vue 3 in Vite.
+Frontend do desafio de **Gerenciamento de Heróis**.  
+Integra com a **HeroManager API** (.NET 8), oferece CRUD de heróis e seleção de **superpoderes**.
 
-## Recommended IDE Setup
+## ✨ Funcionalidades
+- Listagem de heróis com tabela responsiva
+- **Criar / Editar / Excluir** herói
+- Modal com **cabeçalho/rodapé fixos** e corpo rolável
+- Seleção de **múltiplos superpoderes** + chips dos selecionados
+- Tratamento de erros amigável no topo da modal
+- Estilização com **Tailwind CSS**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Type Support for `.vue` Imports in TS
+## 🧰 Stack
+- **Vue 3** (Composition API + `<script setup>`)
+- **Vite** (dev server e build)
+- **TypeScript**
+- **Tailwind CSS**
+- **Vue Router**
+- **Axios** (HTTP)
+- (Opcional) **Pinia** se usar store
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 📦 Requisitos
+- **Node.js 18+** (recomendado 20+)
+- API rodando (Swagger em `https://localhost:{porta}/swagger`)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🚀 Como rodar
 
-```sh
-npm install
-```
+```bash
+# instalar dependências
+npm i
 
-### Compile and Hot-Reload for Development
-
-```sh
+# desenvolvimento
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+# abre em http://localhost:5173
